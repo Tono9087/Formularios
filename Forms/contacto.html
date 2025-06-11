@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="/Formularios/Styles/styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="container-flex">
+      <div class="nav-title">
+        <h1>Formulario de Contacto</h1>
+      </div>
+      <div class="nav-links">
+        <nav>
+          <ul>
+            <a href="/Formularios/Home.html">Inicio</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacto-container">
+    <h2 class="contacto-title">Envíanos tu mensaje</h2>
+    <form class="contacto-form" onsubmit="return sendContactForm(event)">
+      <label for="nombre" class="contacto-label">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" class="contacto-input" required />
+
+      <label for="email" class="contacto-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="contacto-input" required />
+
+      <label for="mensaje" class="contacto-label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" class="contacto-textarea" rows="5" required></textarea>
+
+      <div class="contacto-opciones">
+        <label class="contacto-checkbox">
+          <input type="checkbox" required />
+          Acepto la <a href="#">política de privacidad</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="contacto-boton">Enviar mensaje</button>
+
+      <div id="error-message" class="error-message"></div>
+    </form>
+
+    <p class="contacto-info">
+      Información básica sobre protección de datos: Los datos enviados serán almacenados de forma segura por nuestro equipo únicamente con el fin de atender tu mensaje. Puedes solicitar la eliminación o modificación de tu información en cualquier momento escribiendo a <a href="mailto:privacidad@tuempresa.com">privacidad@tuempresa.com</a>.
+    </p>
+  </div>
+  <script src="/Formularios/Scripts/scripts.js"></script>
+</body>
+</html>

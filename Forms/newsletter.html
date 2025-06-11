@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suscripción a Newsletter</title>
+  <link rel="stylesheet" href="/Formularios/Styles/styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="container-flex">
+      <div class="nav-title">
+        <h1>Suscripción a Newsletter</h1>
+      </div>
+      <div class="nav-links">
+        <nav>
+          <ul>
+            <a href="/Formularios/Home.html">Inicio</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter-container">
+    <h2 class="newsletter-title">Suscríbete a nuestra Newsletter</h2>
+    <form class="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+      <label for="nombre" class="newsletter-label">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" class="newsletter-input" required />
+
+      <label for="email" class="newsletter-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="newsletter-input" required />
+
+      <div class="newsletter-opciones">
+        <label class="newsletter-checkbox">
+          <input type="checkbox" required />
+          Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="newsletter-boton">Suscribirme</button>
+      <div id="error-message" class="error-message"></div>
+    </form>
+
+    <p class="newsletter-info">Al suscribirte, aceptas recibir comunicaciones relacionadas con nuestra newsletter. Puedes darte de baja en cualquier momento. Para más detalles, consulta nuestra <a href="#">Política de Protección de Datos</a>.</p>
+  </div>
+  <script src="/Formularios/Scripts/scripts.js"></script>
+</body>
+</html>

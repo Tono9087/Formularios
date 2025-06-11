@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="/Formularios/Styles/styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="container-flex">
+      <div class="nav-title">
+        <h1>Formulario de Registro</h1>
+      </div>
+      <div class="nav-links">
+        <nav>
+          <ul>
+            <a href="/Formularios/Home.html">Inicio</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="registro-container">
+    <h2 class="registro-title">Crea tu cuenta</h2>
+    <form class="registro-form" onsubmit="return registerAccount(event)">
+      <label for="nombre" class="registro-label">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" class="registro-input" required />
+
+      <label for="usuario" class="registro-label">Nombre de usuario</label>
+      <input type="text" id="usuario" name="usuario" class="registro-input" required />
+
+      <label for="email" class="registro-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="registro-input" required />
+
+      <label for="password" class="registro-label">Contraseña</label>
+      <input type="password" id="password" name="password" class="registro-input" required />
+
+      <label for="confirmar" class="registro-label">Confirmar contraseña</label>
+      <input type="password" id="confirmar" name="confirmar" class="registro-input" required />
+
+      <div class="registro-opciones">
+        <label class="registro-checkbox">
+          <input type="checkbox" required />
+          Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>.
+        </label>
+
+        <label class="registro-checkbox">
+          <input type="checkbox" />
+          No deseo recibir avisos sobre nuevos productos.
+        </label>
+      </div>
+
+      <button type="submit" class="registro-boton">Registrarme</button>
+
+       <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+  <<script src="/Formularios/Scripts/scripts.js"></script>
+</body>
+</html>

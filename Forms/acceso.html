@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso</title>
+  <link rel="stylesheet" href="/Formularios/Styles/styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="container-flex">
+      <div class="nav-title">
+        <h1>Formulario de Acceso</h1>
+      </div>
+      <div class="nav-links">
+        <nav>
+          <ul>
+            <a href="/Formularios/Home.html">Inicio</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="acceso-container">
+    <h2 class="acceso-title">Iniciar sesión</h2>
+    <form class="acceso-form" onsubmit="return authLogin(event)">
+      <label for="email-nif" class="acceso-label">Email o NIF</label>
+      <input type="text" id="email-nif" name="email-nif" class="acceso-input" required />
+
+      <label for="password" class="acceso-label">Contraseña</label>
+      <input type="password" id="password" name="password" class="acceso-input" required />
+
+      <div class="acceso-opciones">
+        <label class="acceso-switch">
+          <input type="checkbox" id="mantener-sesion" />
+          <span class="acceso-slider"></span>
+          Mantener sesión iniciada
+        </label>
+        <a href="#" class="acceso-recuperar">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <button type="submit" class="acceso-boton">Acceder</button>
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+  <script src="/Formularios/Scripts/scripts.js"></script>
+</body>
+</html>
