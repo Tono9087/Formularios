@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/Formularios/Styles/styles.css" />
+  </head>
+  <body>
+    <div class="login-container" id="login-form">
+      <h2 class="login-title">Iniciar Sesión</h2>
+      <form id="form-login" onsubmit="authLogin(event)">
+        <label for="username" class="login-label">Usuario</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="login-input"
+          required
+        />
+
+        <label for="password" class="login-label">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="login-input"
+          required
+        />
+
+        <button
+          type="submit"
+          class="login-button"
+          id="login-btn"
+          name="login-btn"
+          value="login"
+        >
+          Entrar
+        </button>
+      </form>
+      <div id="login-error">
+        <p id="error-message"></p>
+      </div>
+    </div>
+    <script src="/Formularios/Scripts/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,510 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('/Formularios/Resources/images/bgimagelogin.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.login-label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+  color: #555;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+#login-error {
+  margin-top: 1rem;
+  color: red;
+}
+
+.navbar {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.forms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+  min-height: 80vh;
+}
+
+.form-link {
+  flex: 1 1 calc(25% - 2rem);
+  max-width: 300px;
+  min-width: 200px;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.registro-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.registro-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.registro-input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registro-opciones {
+  margin-top: 1.2rem;
+}
+
+.registro-checkbox {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.registro-checkbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.registro-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.registro-boton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.registro-boton:hover {
+  background-color: #218838;
+}
+
+.acceso-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.acceso-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.acceso-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.acceso-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.acceso-input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.acceso-opciones {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acceso-switch {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.acceso-switch input {
+  display: none;
+}
+
+.acceso-slider {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50px;
+  transition: 0.4s;
+  margin-left: 0.5rem;
+}
+
+.acceso-slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.4s;
+  left: 4px;
+  bottom: 4px;
+}
+
+.acceso-switch input:checked + .acceso-slider {
+  background-color: #4CAF50;
+}
+
+.acceso-switch input:checked + .acceso-slider:before {
+  transform: translateX(14px);
+}
+
+.acceso-recuperar {
+  font-size: 0.85rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.acceso-recuperar:hover {
+  text-decoration: underline;
+}
+
+.acceso-boton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.acceso-boton:hover {
+  background-color: #218838;
+}
+
+.newsletter-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.newsletter-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.newsletter-input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter-opciones {
+  margin-top: 1.2rem;
+}
+
+.newsletter-checkbox {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.newsletter-checkbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.newsletter-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-boton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-boton:hover {
+  background-color: #218838;
+}
+
+.newsletter-info {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  color: #555;
+  text-align: center;
+}
+
+.newsletter-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.newsletter-info a:hover {
+  text-decoration: underline;
+}
+
+.contacto-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contacto-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.contacto-input,
+.contacto-textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contacto-opciones {
+  margin-top: 1.2rem;
+}
+
+.contacto-checkbox {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.contacto-checkbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contacto-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.contacto-boton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contacto-boton:hover {
+  background-color: #0056b3;
+}
+
+.contacto-info {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.contacto-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contacto-info a:hover {
+  text-decoration: underline;
+}
+
+#datos {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  color: #444;
+}
+
+#datos h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#datos ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  margin: 0;
+}
+
+#datos ul li {
+  margin-bottom: 0.6rem;
+}
+
+.info {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+}
